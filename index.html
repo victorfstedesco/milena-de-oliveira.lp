@@ -202,6 +202,60 @@
             height: 0.22em;
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 10' preserveAspectRatio='none'%3E%3Cpath d='M0 5 Q 25 0, 50 5 T 100 5' stroke='%23F5DC8A' stroke-width='3' fill='none'/%3E%3C/svg%3E") center/100% 100% no-repeat;
         }
+        /* Estilos para cards clicáveis (Sintomas) */
+        .symptom-card {
+            position: relative;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            padding: 1rem;
+            border-radius: 12px;
+            background-color: transparent;
+        }
+        .symptom-card:not(.expanded):hover {
+            background-color: #F9F6F0;
+        }
+        .symptom-card.expanded {
+            background-color: #F9F6F0;
+        }
+        .symptom-card .description {
+            max-height: 0;
+            overflow: hidden;
+            opacity: 0;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), margin-top 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-top: 0;
+        }
+        .symptom-card.expanded .description {
+            max-height: 200px;
+            opacity: 1;
+            margin-top: 1rem;
+        }
+        .expand-icon {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 28px;
+            height: 28px;
+            background-color: #D4B8A6;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .symptom-card:hover .expand-icon {
+            background-color: #C2A490;
+            transform: scale(1.1);
+        }
+        .symptom-card.expanded .expand-icon {
+            background-color: #C2A490;
+            transform: rotate(45deg);
+        }
     </style>
 </head>
 <body class="font-sans text-dark">
@@ -375,6 +429,126 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SINTOMAS ========== -->
+    <section id="sintomas" class="py-24 md:py-32 bg-surface">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <h2 class="font-serif text-3xl md:text-4xl text-dark mb-6 font-medium reveal">Algumas experiências da vida pedem um espaço de escuta</h2>
+            <p class="text-dark/60 mb-16 reveal reveal-delay-1">Talvez você reconheça em alguma delas:</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 text-center">
+                
+                <div class="symptom-card space-y-4 group reveal reveal-delay-1">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-wind text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Ansiedade</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Você não consegue desligar a cabeça. Nem quando está exausto.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-2">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-cloud-rain text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Depressão e desânimo</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">As tarefas mais simples parecem exigir uma força que você já não tem.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-3">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-handshake text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Relacionamentos afetivos</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Você se doa demais, se frustra, e ainda assim repete os mesmos vínculos.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-4">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-users text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Conflitos familiares</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Convivências que machucam, culpas antigas e silêncios que pesam.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-1">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-battery-warning text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Estresse e esgotamento</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Você sente que está sempre no limite, como se nunca fosse suficiente.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-2">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-sparkle text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Autoestima e insegurança</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Uma sensação constante de não ser bom o bastante, mesmo quando tudo diz o contrário.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-3">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-cloud-sun text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Luto e perdas</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">A dor não encontra lugar para ser elaborada e o tempo não parece aliviar.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-4">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-git-branch text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Dificuldade de decisão</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Medo de errar, de escolher, de se posicionar.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-1">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-warning-circle text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Crises de pânico</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">O corpo reage como se estivesse em perigo, mesmo quando não há ameaça.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-2">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-fingerprint text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Autoconhecimento</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Você já não sabe mais quem é ou que caminho quer seguir.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-3">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-briefcase text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Problemas no trabalho</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Pressões, conflitos e uma insatisfação que começa a afetar sua saúde emocional.</p>
+                </div>
+
+                <div class="symptom-card space-y-4 group reveal reveal-delay-4">
+                    <div class="expand-icon">+</div>
+                    <div class="w-12 h-12 mx-auto bg-[#F5EBE4] rounded-full flex items-center justify-center text-dark group-hover:bg-[#C2A490] group-hover:text-white transition duration-300">
+                        <i class="ph ph-arrows-left-right text-xl"></i>
+                    </div>
+                    <h3 class="text-lg text-dark font-serif font-medium">Mudanças de vida</h3>
+                    <p class="description text-sm text-dark/70 leading-relaxed">Transições que trazem medo, insegurança e sensação de perda de chão.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -912,13 +1086,22 @@
         window.addEventListener('scroll', () => {
             navbar.classList.toggle('nav-compact', window.scrollY > 60);
         });
-
         document.querySelectorAll('.faq-toggle').forEach(btn => {
             btn.addEventListener('click', () => {
                 const item = btn.closest('.faq-item');
                 const wasOpen = item.classList.contains('faq-open');
                 document.querySelectorAll('.faq-item.faq-open').forEach(i => i.classList.remove('faq-open'));
                 if (!wasOpen) item.classList.add('faq-open');
+            });
+        });
+
+        // Toggle dos cards (Sintomas)
+        document.addEventListener('DOMContentLoaded', function() {
+            const symptomCards = document.querySelectorAll('.symptom-card');
+            symptomCards.forEach(card => {
+                card.addEventListener('click', function(e) {
+                    this.classList.toggle('expanded');
+                });
             });
         });
 
