@@ -15,23 +15,23 @@
             theme: {
                 extend: {
                     colors: {
-                        primary: '#E88B7D',
-                        primarydark: '#D6725F',
-                        dark: '#3D2942',
-                        darker: '#2A1C30',
-                        light: '#FDF7F1',
+                        primary: '#D4B8A6',
+                        primarydark: '#C2A490',
+                        dark: '#4A3E38',
+                        darker: '#3A2E28',
+                        light: '#F9F6F0',
                         surface: '#FFFFFF',
-                        bordercolor: '#F3E4D7',
-                        warm: '#FFE8D9',
-                        blush: '#FFD6D6',
-                        coral: '#F2A89A',
-                        rose: '#E8899E',
-                        mauve: '#B891C0',
-                        lavender: '#D4C4E8',
-                        sky: '#BDD6ED',
-                        mint: '#B8DCC8',
-                        butter: '#F5DC8A',
-                        sage: '#C8D4B0',
+                        bordercolor: '#EBE3DB',
+                        warm: '#F5EBE4',
+                        blush: '#F0E2DA',
+                        coral: '#E8D5C8',
+                        rose: '#E0CCBE',
+                        mauve: '#D6C0B1',
+                        lavender: '#E9DDD4',
+                        sky: '#E2D5CB',
+                        mint: '#DCD0C6',
+                        butter: '#F4EAE0',
+                        sage: '#D8C9BE',
                     },
                     fontFamily: {
                         sans: ['Nunito', 'sans-serif'],
@@ -151,20 +151,21 @@
         }
 
         .hero-grad-text {
-            background: linear-gradient(120deg, #E88B7D 0%, #B891C0 55%, #E8899E 100%);
+            background: linear-gradient(120deg, #D4B8A6 0%, #D6C0B1 55%, #E0CCBE 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
+            padding-right: 0.15em;
         }
 
         .pill-tag {
-            background: linear-gradient(90deg, rgba(232,139,125,0.12), rgba(184,145,192,0.12));
-            border: 1px solid rgba(232,139,125,0.25);
+            background: linear-gradient(90deg, rgba(212,184,166,0.12), rgba(214,192,177,0.12));
+            border: 1px solid rgba(212,184,166,0.25);
         }
 
-        .card-pastel-1 { background: linear-gradient(160deg, #FFE8D9 0%, #FFD6D6 100%); }
-        .card-pastel-2 { background: linear-gradient(160deg, #E8DBF5 0%, #D4C4E8 100%); }
-        .card-pastel-3 { background: linear-gradient(160deg, #D7ECD9 0%, #B8DCC8 100%); }
+        .card-pastel-1 { background: linear-gradient(160deg, #F5EBE4 0%, #F0E2DA 100%); }
+        .card-pastel-2 { background: linear-gradient(160deg, #E9DDD4 0%, #D6C0B1 100%); }
+        .card-pastel-3 { background: linear-gradient(160deg, #E2D5CB 0%, #DCD0C6 100%); }
 
         .sticker {
             display: inline-flex;
@@ -179,7 +180,7 @@
         }
 
         .btn-candy {
-            background: linear-gradient(120deg, #E88B7D 0%, #E8899E 55%, #B891C0 100%);
+            background: linear-gradient(120deg, #D4B8A6 0%, #E0CCBE 55%, #D6C0B1 100%);
             background-size: 200% 200%;
             background-position: 0% 0%;
             transition: background-position 0.6s ease, transform 0.3s ease, box-shadow 0.3s ease;
@@ -187,7 +188,7 @@
         .btn-candy:hover {
             background-position: 100% 100%;
             transform: translateY(-2px);
-            box-shadow: 0 20px 40px -15px rgba(184, 145, 192, 0.5);
+            box-shadow: 0 20px 40px -15px rgba(214, 192, 177, 0.5);
         }
 
         .underline-wave {
@@ -207,7 +208,7 @@
 
     <div class="fixed top-0 left-0 w-full h-screen pointer-events-none -z-10 opacity-40">
         <div class="absolute top-[10%] right-[5%] w-96 h-96 bg-stone-200 rounded-full blur-3xl mix-blend-multiply filter opacity-50 animate-pulse-soft"></div>
-        <div class="absolute bottom-[10%] left-[5%] w-72 h-72 bg-[#dae3e7] rounded-full blur-3xl mix-blend-multiply filter opacity-50 animate-pulse-soft delay-[300ms]"></div>
+        <div class="absolute bottom-[10%] left-[5%] w-72 h-72 bg-[#E8E0D5] rounded-full blur-3xl mix-blend-multiply filter opacity-50 animate-pulse-soft delay-[300ms]"></div>
     </div>
 
     <!-- ========== NAV ========== -->
@@ -379,7 +380,7 @@
     </section>
 
     <!-- ========== ESPECIALIDADES — grid cards lado a lado ========== -->
-    <section id="especialidades" class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(180deg, #FDF7F1 0%, #FFEFE4 100%);">
+    <section id="especialidades" class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(180deg, #F2F0EB 0%, #F5EBE4 100%);">
         <div class="blob bg-coral" style="width:420px; height:420px; top:10%; left:-120px; opacity:0.3;"></div>
         <div class="blob bg-mint" style="width:360px; height:360px; bottom:10%; right:-100px; opacity:0.35;"></div>
 
@@ -448,23 +449,23 @@
                 <!-- Card 3 -->
                 <div class="reveal reveal-delay-2 group relative rounded-[2rem] p-8 md:p-10 card-pastel-3 border border-white/60 hover:shadow-soft hover:-translate-y-1 transition-all duration-500">
                     <div class="w-16 h-16 rounded-2xl bg-white flex items-center justify-center mb-7 shadow-softer rotate-2 group-hover:rotate-0 transition-transform duration-500">
-                        <i class="ph ph-butterfly text-2xl" style="color:#6FA88A;"></i>
+                        <i class="ph ph-butterfly text-2xl" style="color:#C2A490;"></i>
                     </div>
-                    <h3 class="font-serif text-2xl text-dark mb-4">Autoconhecimento <em class="italic" style="color:#6FA88A;">&</em> Relações</h3>
+                    <h3 class="font-serif text-2xl text-dark mb-4">Autoconhecimento <em class="italic" style="color:#C2A490;">&</em> Relações</h3>
                     <p class="text-dark/65 font-light leading-relaxed text-[15px] mb-6">
                         Conhecer a si mesmo é o primeiro passo para relações mais saudáveis e uma vida mais autêntica e plena.
                     </p>
                     <ul class="space-y-2.5">
                         <li class="flex items-start gap-2.5 text-dark/70 font-light text-sm">
-                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#6FA88A;"></i>
+                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#C2A490;"></i>
                             Dificuldades nos relacionamentos
                         </li>
                         <li class="flex items-start gap-2.5 text-dark/70 font-light text-sm">
-                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#6FA88A;"></i>
+                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#C2A490;"></i>
                             Baixa autoestima e insegurança
                         </li>
                         <li class="flex items-start gap-2.5 text-dark/70 font-light text-sm">
-                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#6FA88A;"></i>
+                            <i class="ph-fill ph-flower text-base mt-0.5 flex-shrink-0" style="color:#C2A490;"></i>
                             Transições e mudanças de vida
                         </li>
                     </ul>
@@ -537,7 +538,7 @@
                     </div>
                     <!-- Step 4 -->
                     <div class="reveal reveal-delay-3 flex gap-5 group p-6 rounded-3xl bg-mint/30 hover:bg-mint/50 transition-colors duration-500 md:ml-24">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-serif text-xl text-white shadow-softer" style="background:#6FA88A;">
+                        <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-serif text-xl text-white shadow-softer" style="background:#C2A490;">
                             4
                         </div>
                         <div class="flex-1 pt-1">
@@ -553,7 +554,7 @@
     </section>
 
     <!-- ========== DEPOIMENTOS — destaque maior + menores ========== -->
-    <section id="depoimentos" class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(180deg, #FFEFE4 0%, #F7E5F0 100%);">
+    <section id="depoimentos" class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(180deg, #F5EBE4 0%, #EBE3DB 100%);">
         <div class="blob bg-rose" style="width:400px; height:400px; top:10%; right:-80px; opacity:0.3;"></div>
         <div class="blob bg-sky" style="width:360px; height:360px; bottom:10%; left:-80px; opacity:0.35;"></div>
 
@@ -682,12 +683,12 @@
             <div class="flex flex-col md:flex-row gap-16 md:gap-24">
                 <!-- Lado esquerdo -->
                 <div class="w-full md:w-2/5 md:sticky md:top-32 md:self-start">
-                    <span class="reveal sticker bg-mint/50 text-dark/70 mb-5" style="color:#4E8668;">
-                        <span class="w-1.5 h-1.5 rounded-full" style="background:#6FA88A;"></span>
+                    <span class="reveal sticker bg-mint/50 text-dark/70 mb-5" style="color:#B29480;">
+                        <span class="w-1.5 h-1.5 rounded-full" style="background:#C2A490;"></span>
                         Dúvidas
                     </span>
                     <h2 class="reveal reveal-delay-1 font-serif text-3xl md:text-[3rem] leading-tight text-dark mb-6 mt-5">
-                        Perguntas <em class="italic" style="color:#6FA88A;">frequentes</em>
+                        Perguntas <em class="italic" style="color:#C2A490;">frequentes</em>
                     </h2>
                     <p class="reveal reveal-delay-2 text-dark/65 font-light leading-relaxed text-[15.5px]">
                         Se a sua dúvida não estiver aqui, me envie uma mensagem. Terei prazer em responder.
@@ -741,8 +742,8 @@
                     <div class="reveal reveal-delay-2 faq-item rounded-2xl bg-light border border-bordercolor/80 px-5 transition-colors hover:bg-mint/25">
                         <button class="faq-toggle w-full flex items-center justify-between py-5 text-left group">
                             <span class="font-medium text-dark transition-colors pr-6" style="color:inherit;">Você atende online?</span>
-                            <span class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 faq-chevron" style="background:rgba(184,220,200,0.5);">
-                                <i class="ph ph-caret-down text-sm" style="color:#6FA88A;"></i>
+                            <span class="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 faq-chevron" style="background:rgba(216,201,190,0.5);">
+                                <i class="ph ph-caret-down text-sm" style="color:#C2A490;"></i>
                             </span>
                         </button>
                         <div class="faq-answer">
@@ -785,7 +786,7 @@
     </section>
 
     <!-- ========== CTA FINAL — gradiente candy ========== -->
-    <section class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(135deg, #E88B7D 0%, #E8899E 40%, #B891C0 100%);">
+    <section class="relative py-28 md:py-36 overflow-hidden" style="background: linear-gradient(135deg, #D4B8A6 0%, #E0CCBE 40%, #D6C0B1 100%);">
         <div class="blob bg-butter" style="width:500px; height:500px; top:-100px; right:-150px; opacity:0.35;"></div>
         <div class="blob bg-sky" style="width:400px; height:400px; bottom:-100px; left:-100px; opacity:0.3;"></div>
         <div class="absolute inset-0 opacity-[0.05]">
@@ -884,7 +885,7 @@
     </footer>
 
     <!-- ========== WHATSAPP FLUTUANTE ========== -->
-    <a href="https://wa.me/5500000000000" target="_blank" id="whatsappFloat" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-candy hover:scale-110 transition-all duration-300" style="background: linear-gradient(135deg, #E88B7D 0%, #B891C0 100%);">
+    <a href="https://wa.me/5500000000000" target="_blank" id="whatsappFloat" class="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-candy hover:scale-110 transition-all duration-300" style="background: linear-gradient(135deg, #D4B8A6 0%, #D6C0B1 100%);">
         <svg class="w-6 h-6" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
