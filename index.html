@@ -475,78 +475,59 @@
     </section>
 
     <!-- ========== JORNADA — cards numerados verticais ========== -->
-    <section id="jornada" class="relative py-28 md:py-36 bg-surface overflow-hidden">
-        <div class="blob bg-butter" style="width:340px; height:340px; top:20%; left:-80px; opacity:0.3;"></div>
+    <section id="jornada" class="relative py-28 md:py-36 overflow-hidden">
+        <div class="relative z-10 max-w-3xl mx-auto px-6">
+            <!-- Cabeçalho -->
+            <div class="mb-14">
+                <span class="reveal uppercase text-xs font-bold tracking-[0.15em] text-[#D4B8A6] mb-4 block">
+                    O caminho
+                </span>
+                <h2 class="reveal reveal-delay-1 font-serif text-4xl md:text-[3rem] leading-[1.15] text-dark mb-6">
+                    Como funciona o processo de psicoterapia
+                </h2>
+                <p class="reveal reveal-delay-2 text-dark/70 font-light leading-relaxed text-lg">
+                    A psicoterapia é um percurso, feito de escuta, tempo e elaboração. Construído na singularidade de cada história.
+                </p>
+            </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-6">
-            <div class="flex flex-col md:flex-row gap-16 md:gap-24">
-                <!-- Lado esquerdo fixo -->
-                <div class="w-full md:w-2/5 md:sticky md:top-32 md:self-start">
-                    <span class="reveal sticker bg-butter/50 text-dark/70 mb-5">
-                        <span class="w-1.5 h-1.5 rounded-full bg-butter"></span>
-                        Jornada terapêutica
-                    </span>
-                    <h2 class="reveal reveal-delay-1 font-serif text-3xl md:text-[3rem] leading-tight text-dark mb-6 mt-5">
-                        Como funciona <em class="italic text-primary">o processo</em>
-                    </h2>
-                    <p class="reveal reveal-delay-2 text-dark/65 font-light leading-relaxed mb-8 text-[15.5px]">
-                        A terapia é uma jornada personalizada. Cada etapa respeita o seu tempo e as suas necessidades.
-                    </p>
-                    <a href="https://wa.me/5500000000000" target="_blank" class="reveal reveal-delay-3 inline-flex items-center gap-2.5 btn-candy text-white px-7 py-4 rounded-full text-[15px] font-medium shadow-candy">
-                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        Iniciar jornada
-                    </a>
+            <!-- Cards -->
+            <div class="space-y-6">
+                <!-- Step 1 -->
+                <div class="reveal reveal-delay-1 bg-white p-6 md:p-8 rounded-3xl flex items-center gap-6 shadow-sm border border-white">
+                    <div class="flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F5EBE4] flex items-center justify-center font-serif text-2xl md:text-3xl text-[#C2A490] italic">
+                        1
+                    </div>
+                    <div>
+                        <h4 class="font-serif text-2xl md:text-[1.75rem] text-dark mb-2">Escuta.</h4>
+                        <p class="text-dark/65 font-light leading-relaxed text-[15px] md:text-base">
+                            Acolhimento da sua história e da sua demanda.
+                        </p>
+                    </div>
                 </div>
 
-                <!-- Passos à direita -->
-                <div class="w-full md:w-3/5 space-y-5">
-                    <!-- Step 1 -->
-                    <div class="reveal flex gap-5 group p-6 rounded-3xl bg-coral/10 hover:bg-coral/20 transition-colors duration-500">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-coral flex items-center justify-center font-serif text-xl text-white shadow-softer">
-                            1
-                        </div>
-                        <div class="flex-1 pt-1">
-                            <h4 class="font-serif text-xl text-dark mb-2">Primeiro contato</h4>
-                            <p class="text-dark/65 font-light leading-relaxed text-[15px]">
-                                Entre em contato pelo WhatsApp. Conversamos brevemente sobre o que te trouxe até aqui para que eu possa entender sua demanda.
-                            </p>
-                        </div>
+                <!-- Step 2 -->
+                <div class="reveal reveal-delay-2 bg-white p-6 md:p-8 rounded-3xl flex items-center gap-6 shadow-sm border border-white">
+                    <div class="flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F5EBE4] flex items-center justify-center font-serif text-2xl md:text-3xl text-[#C2A490] italic">
+                        2
                     </div>
-                    <!-- Step 2 -->
-                    <div class="reveal reveal-delay-1 flex gap-5 group p-6 rounded-3xl bg-lavender/30 hover:bg-lavender/50 transition-colors duration-500 md:ml-8">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-mauve flex items-center justify-center font-serif text-xl text-white shadow-softer">
-                            2
-                        </div>
-                        <div class="flex-1 pt-1">
-                            <h4 class="font-serif text-xl text-dark mb-2">Sessão inicial</h4>
-                            <p class="text-dark/65 font-light leading-relaxed text-[15px]">
-                                Na primeira sessão, criamos um espaço de acolhimento para você contar sua história sem pressa e sem julgamento.
-                            </p>
-                        </div>
+                    <div>
+                        <h4 class="font-serif text-2xl md:text-[1.75rem] text-dark mb-2">Processo.</h4>
+                        <p class="text-dark/65 font-light leading-relaxed text-[15px] md:text-base">
+                            Encontros regulares que possibilitam elaboração.
+                        </p>
                     </div>
-                    <!-- Step 3 -->
-                    <div class="reveal reveal-delay-2 flex gap-5 group p-6 rounded-3xl bg-butter/30 hover:bg-butter/50 transition-colors duration-500 md:ml-16">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full bg-butter flex items-center justify-center font-serif text-xl text-dark shadow-softer">
-                            3
-                        </div>
-                        <div class="flex-1 pt-1">
-                            <h4 class="font-serif text-xl text-dark mb-2">Plano terapêutico</h4>
-                            <p class="text-dark/65 font-light leading-relaxed text-[15px]">
-                                Juntos, traçamos objetivos e definimos a frequência ideal. Cada plano é único, assim como cada pessoa.
-                            </p>
-                        </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="reveal reveal-delay-3 bg-white p-6 md:p-8 rounded-3xl flex items-center gap-6 shadow-sm border border-white">
+                    <div class="flex-shrink-0 w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#F5EBE4] flex items-center justify-center font-serif text-2xl md:text-3xl text-[#C2A490] italic">
+                        3
                     </div>
-                    <!-- Step 4 -->
-                    <div class="reveal reveal-delay-3 flex gap-5 group p-6 rounded-3xl bg-mint/30 hover:bg-mint/50 transition-colors duration-500 md:ml-24">
-                        <div class="flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center font-serif text-xl text-white shadow-softer" style="background:#C2A490;">
-                            4
-                        </div>
-                        <div class="flex-1 pt-1">
-                            <h4 class="font-serif text-xl text-dark mb-2">Transformação</h4>
-                            <p class="text-dark/65 font-light leading-relaxed text-[15px]">
-                                Sessão a sessão, você vai percebendo mudanças reais na forma como se sente, se relaciona e vive.
-                            </p>
-                        </div>
+                    <div>
+                        <h4 class="font-serif text-2xl md:text-[1.75rem] text-dark mb-2">Transformação.</h4>
+                        <p class="text-dark/65 font-light leading-relaxed text-[15px] md:text-base">
+                            Compreensão que gera novas formas de viver.
+                        </p>
                     </div>
                 </div>
             </div>
